@@ -1,0 +1,425 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Georgia, Helvetica, Arial, sans-serif;
+}
+
+.extratop {
+     margin-top: 50px;
+}
+
+.extrabottom {
+     margin-bottom: 80px;
+}
+
+#main_body{
+     padding-top: 100px;
+}
+
+#move-to-right{
+     float: right;
+     padding-right: 200px;
+
+}
+
+/*#product{
+     position: fixed;
+}*/
+
+
+/* Put the image on the <a> and not the <h1> itself so that the link works properly */
+h1 a {
+     background: url('../images/caked5.png') no-repeat;
+     width: 260px;
+     height: 89px;
+     margin: auto;
+     display: block;
+     /* image replacment technique */
+     text-indent: 1000%;
+     white-space: nowrap;
+     overflow: hidden;
+}
+
+h5{
+     text-transform: uppercase;
+}
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+#main_container{
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     padding: 0;
+     margin: 0px;
+}
+
+.black{
+     background-color: black;
+     width: 100%;
+     height: 100%;
+}
+
+header {
+     margin: 50px auto;
+}
+.tit h1 a {
+     background: url('../images/tit.png') no-repeat;
+     width: 330px;
+     height: 99px;
+     margin: auto;
+     display: block;
+     /* image replacment technique */
+     text-indent: 1000%;
+     white-space: nowrap;
+     overflow: hidden;
+}
+
+
+footer {
+     background-color: #000;
+     color: #FFF;
+     position:fixed;
+     bottom:0;
+     width:100%;
+/*     height:50px;    Height of the footer */
+     padding: 5px;
+}
+
+     footer ul{
+          width: 900px;
+          margin: auto;
+     }
+
+          footer ul li{
+               float: left;
+               padding-left: 30px;
+               height: 20px;
+          }
+
+               footer ul li a {
+                    text-decoration: none;
+                    color: #FFF;
+
+               }
+
+                    footer ul li a:hover{
+                         text-decoration: underline;
+                         color: #FFF;
+                    }
+
+
+#main_content{
+     padding-bottom: 100px;
+}
+
+#Lside_content{
+     position: fixed;
+}
+
+
+.img_slider {
+     height: 394px;
+/*     border-bottom: 5px solid black;*/
+}
+
+#img_slide{
+     padding-top: 94px;
+     padding-left: 92px;
+
+}
+
+#descrip{
+     padding-top: 30px;
+}
+
+#suggest{
+     padding-bottom: 70px;
+}
+
+
+
+hr {
+     height: 5px;
+     width: 500px;
+     border: 0;
+     box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+     -moz-box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+     -webkit-box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+}
+
+/******************************************
+/* LAYOUT   -   TITLE SPIRTES                
+/*******************************************/
+
+
+#title h2{
+     font-family: 'Arapey', serif;
+     font-size: 44px;
+     text-transform: uppercase;
+}
+
+#titles hr{
+     height: 2px;
+     width: 450px;
+     margin-left: 50px;
+}
+
+#titles a { 
+     text-indent: 1000%;
+     white-space: nowrap;
+     overflow: hidden;
+     height: 60px;
+     width: 150px;
+     display: block;
+     background-image: url('../images/title.png');
+
+}
+
+     
+
+.face_page a{
+     background-position: 201px -95px;
+     margin-left: 200px;
+}
+
+.eye_page a {
+     background-position: 204px 1px; 
+     margin-left: 200px;  
+}
+
+.eye_img{
+     height: 210px;
+     width: 260px;
+     border-radius: 10px;
+     -moz-border-radius:10px;
+     -webkit-border-radius:10px;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES  - GO BACK            
+/*******************************************/
+#go_back {
+     color: #FFF;
+     width: 450px;
+     margin: 150px auto;
+}
+
+#go_back h2{
+     color: #FFF;
+}
+
+#go_back a {
+     text-decoration: none;
+     color: #FFF;
+     font-size: 24px;
+}
+
+#go_back a:hover {
+     font-weight: bold;
+}
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES  - NAV                
+/*******************************************/
+
+nav {
+     display: block;
+     font-family: Georgia;
+     text-transform: uppercase;
+
+
+}
+     nav ul li {
+          padding: 5px;
+     }
+          nav ul li a{
+               color: #333;
+          }
+
+
+.arrow-up {
+     width: 10px; 
+     height: 10px; 
+     border-left: 5px solid transparent;
+     border-right: 5px solid transparent;
+     border-bottom: 5px solid black;
+}
+
+#hidden{
+
+}
+
+#mainNav{
+     color: #FFF;
+     display: inline;
+     width: 500px; 
+
+}
+
+#mainNav ul li{
+     float: left;
+     margin: auto;
+     padding-left: 20px;
+}
+
+#mainNav ul li a{
+     color: #FFF;
+     text-decoration: none;
+}
+
+#mainNav a:hover{
+     font-weight: bold;
+}
+
+/******************************************
+/* ADDITIONAL STYLES  - nav design with jquery               
+/*******************************************/
+ 
+
+/******************************************
+/* ADDITIONAL STYLES  - FORM              
+/*******************************************/
+#contactus h3, #contactus h6 {
+     color: #FFF;
+}
+
+#contactus{
+     z-index: -1;
+}
+
+.contact_mes{
+     padding-top: 120px;
+}
+
+#message {
+     width: 500px;
+}
+
+#name, #email, #web{
+     width: 250px;
+     padding: 2px;
+}
+
+label {
+     padding-bottom: 3px;
+}
+
+
+#arrow  li a {
+     text-indent: 1000%;
+     white-space: nowrap;
+     overflow: hidden;
+     height: 33px;
+     width: 34px;
+     display: block;
+     background-image: url('../images/sprites.png');
+}
+#arrow  li {
+     padding-left: 400px;
+}
+.arrow_down a {
+     background-position: 271px 80px;
+}
+#arrow li a:hover {
+
+     background-position-y: 111px;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES  - SOCIAL MEDIA                
+/*******************************************/
+
+#socialmedia ul li a { 
+     text-indent: 1000%;
+     white-space: nowrap;
+     overflow: hidden;
+     height: 18px;
+     width: 19px;
+     display: block;
+     background-image: url('../images/media-icons.png');
+}
+
+#socialmedia ul li {
+     float: left;
+}
+     
+
+.facebook a {
+     background-position: 181px 49px;
+}
+
+.twitter a {
+     background-position: 246px 50px;   
+}
+
+.linkedin a {
+     background-position: 42px 49px;
+}
+.pinterest a {
+     background-position: 20px 48px;
+}
+
+#socialmedia ul li a:hover { /*there is no need to change the horizontal position as they are all on the same line*/
+     background-position-y: 71px; /*only change the vertical alignment aka y-axis*/
+}
+
